@@ -14,9 +14,9 @@
 # Install for all hosts
 - hosts: all
   roles:
-    - pre-install
+#    - pre-install
     - workstation
-    - post-brew
+#    - post-brew
 
 # Install GUI components
 - hosts: gui

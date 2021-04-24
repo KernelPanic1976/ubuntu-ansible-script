@@ -3,22 +3,22 @@
   shell: apt update
   become: yes
 
-- name: Apt Installs GUI tools
-  become: yes
-  apt:
-    state: present
-    name:
+#- name: Apt Installs GUI tools
+#  become: yes
+#  apt:
+#    state: present
+#    name:
 
-      - cinnamon-desktop-environment
-      - clipit
-      - flameshot
-      - gkrellm
-      - google-chrome-stable
-      - kdiff3
-      - kleopatra
-      - lightdm
-      - rhythmbox
-      - ulauncher
+#      - cinnamon-desktop-environment
+#      - clipit
+#      - flameshot
+#      - gkrellm
+#      - google-chrome-stable
+#      - kdiff3
+#      - kleopatra
+#      - lightdm
+#      - rhythmbox
+#      - ulauncher
 
 - name: Install snapd
   shell: "snap install snapd"

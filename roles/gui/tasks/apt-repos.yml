@@ -4,11 +4,11 @@
     url: https://dl.google.com/linux/linux_signing_key.pub
     state: present
 
-- name: Add Docker Key
-  become: yes
-  apt_key:
-    url: https://download.docker.com/linux/ubuntu/gpg
-    state: present
+#- name: Add Docker Key
+#  become: yes
+#  apt_key:
+#    url: https://download.docker.com/linux/ubuntu/gpg
+#    state: present
 
 - name: Add Chrome Stable
   become: yes
@@ -18,16 +18,16 @@
       filename: google-chrome
       update_cache: yes
 
-- name: Add Docker
-  become: yes
-  apt_repository:
-      repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
-      state: present
-      filename: docker-stable
-      update_cache: yes
+#- name: Add Docker
+#  become: yes
+#  apt_repository:
+#      repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+#      state: present
+#      filename: docker-stable
+#      update_cache: yes
 
-- name: apt-repo - ULauncher
-  become: yes
-  apt_repository:
-      repo: ppa:agornostal/ulauncher
-      state: present
+#- name: apt-repo - ULauncher
+#  become: yes
+#  apt_repository:
+#   repo: ppa:agornostal/ulauncher
+#      state: present

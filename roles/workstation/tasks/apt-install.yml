@@ -11,24 +11,14 @@
     state: present
     name:
 
-      - build-essential
       - clamav
       - clamtk
-      - ctags
-      - fish
       - fonts-powerline
       - git
       - htop
-      - mlocate
       - net-tools
       - python-dev
-      - rbenv
-      - ruby
-      - ruby-dev
       - snapd
-      - sysstat
-      - terminator
       - thefuck
-      - tmux
-      - vim
-      - yarn
+      - arduino
+      
